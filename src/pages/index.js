@@ -41,7 +41,7 @@ const CustomQueryStringComponent = ({ search }) => {
     edge => edge.node.cataloguserid === usercatalogid
   ) : undefined;
   
-  console.log("item : "+item)
+  console.log("item : "+JSON.stringify(item))
   if (item == undefined) {
     return <Layout site={data.site}>
       <div className="Catalogue">
