@@ -6,7 +6,8 @@ import Img from 'gatsby-image'
 import withLocation from "../layouts/withLocation"
 
 const CustomQueryStringComponent = ({ search }) => {
-  const { usercatalogid } = search
+  //const { usercatalogid } = search
+  const usercatalogid = 1;
   return (
     <StaticQuery
       query={graphql`
