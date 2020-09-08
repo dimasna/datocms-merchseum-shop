@@ -77,7 +77,7 @@ const CustomQueryStringComponent = ({ search }) => {
   return <Layout site={data.site}>
     <div className="Catalogue">
       {
-        item.map(({ node: product }) => (
+        item.forEach(({ node: product }) => (
           <div className="Catalogue__item" key={product.id}>
             <div
               className="Product snipcart-add-item"
