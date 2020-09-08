@@ -36,7 +36,7 @@ const CustomQueryStringComponent = ({ search }) => {
         }
       `}
   render={data => {
-    console.log("usercatalogid :" +pid);
+    console.log("pid :" +pid);
     const item = pid !== undefined ? data.products.edges.find(
     edge => edge.node.id === `DatoCmsProduct-${pid}-en`
   ) : undefined;
