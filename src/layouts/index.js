@@ -7,10 +7,10 @@ import '../style/index.scss'
 
 const Layout = ({ children, site }) => (
   <div>
-    <Helmet title="Snipcart + DatoCMS + GatsbyJS Example" />
+    <Helmet title="Merchseum Shop" />
     <div className="Container">
       <div className="Header">
-        <div className="Wrap" >
+        <img src="https://res.cloudinary.com/dzrwauiut/image/upload/v1599592829/merchseum_nysmw9.png" width="50"/>
           <div className="Header__body">
             <h1 className="Header__title">
               <Link data-text={site.siteMetadata.siteName} to="/">
@@ -28,18 +28,13 @@ const Layout = ({ children, site }) => (
                 Total price: <span className="snipcart-total-price"></span>
               </div>
             </div>
-          </div>
+          
         </div>
       </div>
       <div className="Wrap" >
         {children}
       </div>
-      <div className="Wrap" >
-        <div className="Footer">
-          This website is just an example project to demonstrate how you can 
-          integrate <a href="https://www.gatsbyjs.org/">Gatsby</a>, <a href="https://snipcart.com/">Snipcart</a> and <a href="https://www.datocms.com">DatoCMS</a>.
-        </div>
-      </div>
+      
     </div>
   </div>
 )
