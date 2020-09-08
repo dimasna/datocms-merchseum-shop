@@ -35,7 +35,7 @@ const CustomQueryStringComponent = ({ search }) => {
       `}
   render={data => {
     console.log("usercatalogid :" +usercatalogid);
-    const item = usercatalogid !== null ? data.products.edges.find(
+    const item = usercatalogid !== undefined ? data.products.edges.find(
     edge => edge.node.id === usercatalogid
   ) : null;
   
