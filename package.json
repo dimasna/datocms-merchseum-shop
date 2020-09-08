@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Stefano Verna <s.verna@datocms.com>",
   "dependencies": {
+    "@reach/router": "^1.3.4",
     "dotenv": "^8.2.0",
     "gatsby": "^2.22.12",
     "gatsby-image": "^2.2.34",
@@ -12,13 +13,12 @@
     "gatsby-plugin-sass": "^2.1.24",
     "gatsby-plugin-sharp": "^2.3.5",
     "gatsby-plugin-snipcart": "^1.1.2",
-    "gatsby-plugin-use-query-params": "^1.0.1",
     "gatsby-source-datocms": "^2.2.4",
     "node-sass": "^4.12.0",
+    "query-string": "^6.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.0",
-    "use-query-params": "^1.1.6"
+    "react-helmet": "^5.2.0"
   },
   "keywords": [
     "gatsby"
