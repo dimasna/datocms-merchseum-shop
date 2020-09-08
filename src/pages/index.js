@@ -34,6 +34,7 @@ const CustomQueryStringComponent = ({ search }) => {
         }
       `}
   render={data => {
+    console.log(data);
     const item = userCatalogId !== null ? data.allDatoCmsProduct.edges.find(
     edge => edge.node.id === userCatalogId
   ) : null;
