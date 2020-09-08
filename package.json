@@ -15,6 +15,7 @@
     "gatsby-plugin-snipcart": "^1.1.2",
     "gatsby-source-datocms": "^2.2.4",
     "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
     "query-string": "^6.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
