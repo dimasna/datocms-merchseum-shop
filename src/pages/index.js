@@ -40,7 +40,7 @@ const CustomQueryStringComponent = ({ search }) => {
   ) : null;
   
   console.log("item : "+item)
-  if (!item) {
+  if (item == undefined) {
     return <Layout site={data.site}>
       <div className="Catalogue">
         {
