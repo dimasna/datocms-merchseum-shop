@@ -6,7 +6,7 @@ import Img from 'gatsby-image'
 import withLocation from "../layouts/withLocation"
 
 const CustomQueryStringComponent = ({ search }) => {
-  const { userCatalogId } = search
+  const { usercatalogid } = search
   return (
     <StaticQuery
       query={graphql`
@@ -34,9 +34,9 @@ const CustomQueryStringComponent = ({ search }) => {
         }
       `}
   render={data => {
-    console.log("usercatalogid :" +userCatalogId);
-    const item = userCatalogId !== null ? data.products.edges.find(
-    edge => edge.node.id === userCatalogId
+    console.log("usercatalogid :" +usercatalogid);
+    const item = usercatalogid !== null ? data.products.edges.find(
+    edge => edge.node.id === usercatalogid
   ) : null;
   
   console.log("item : "+item)
