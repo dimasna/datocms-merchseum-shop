@@ -15,6 +15,7 @@ const CustomQueryStringComponent = ({ search }) => {
           products: allDatoCmsProduct {
             edges {
               node {
+                cataloguserid
                 id
                 name
                 price
@@ -37,7 +38,7 @@ const CustomQueryStringComponent = ({ search }) => {
   render={data => {
     console.log("usercatalogid :" +usercatalogid);
     const item = usercatalogid !== undefined ? data.products.edges.find(
-    edge => edge.node.id === usercatalogid
+    edge => edge.node.cataloguserid === usercatalogid
   ) : undefined;
   
   console.log("item : "+item)
