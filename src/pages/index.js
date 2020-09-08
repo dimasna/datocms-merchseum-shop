@@ -6,8 +6,8 @@ import Img from 'gatsby-image'
 import withLocation from "../layouts/withLocation"
 
 const CustomQueryStringComponent = ({ search }) => {
-  //const { usercatalogid } = search
-  const usercatalogid = 1;
+  const { usercatalogid } = search
+  //const usercatalogid = 1;
   return (
     <StaticQuery
       query={graphql`
@@ -38,7 +38,7 @@ const CustomQueryStringComponent = ({ search }) => {
   render={data => {
     console.log("usercatalogid :" +usercatalogid);
     const item = usercatalogid !== undefined ? data.products.edges.find(
-    edge => edge.node.cataloguserid === usercatalogid
+    edge => edge.node.id === `DatoCmsProduct-${usercatalogid}-en`
   ) : undefined;
   
   console.log("item : "+JSON.stringify(item))
@@ -78,22 +78,22 @@ const CustomQueryStringComponent = ({ search }) => {
     <div className="Catalogue">
       {
         
-          <div className="Catalogue__item" key={item.id}>
+          <div className="Catalogue__item" key={item.node.id}>
             <div
               className="Product snipcart-add-item"
-              data-item-id={item.id}
-              data-item-price={item.price}
-              data-item-image={item.image.url}
-              data-item-name={item.name}
+              data-item-id={item.node.id}
+              data-item-price={item.node.price}
+              data-item-image={item.node.image.url}
+              data-item-name={item.node.name}
               data-item-url={`/`}
             >
               <div className="Product__image">
-                <Img sizes={item.image.sizes} />
+                <Img sizes={item.node.image.sizes} />
               </div> <div className="Product__details">
                 <div className="Product__name">
-                  {item.name}
+                  {item.node.name}
                   <div className="Product__price">
-                    {item.price}€
+                    {item.node.price}€
                   </div>
                 </div>
                 <span className="Product__buy">Buy now</span>
