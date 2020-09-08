@@ -10,7 +10,7 @@ const Layout = ({ children, site }) => (
     <Helmet title="Merchseum Shop" />
     <div className="Container">
       <div className="Header">
-        <img src="https://res.cloudinary.com/dzrwauiut/image/upload/v1599592829/merchseum_nysmw9.png" width="100"/>
+        <img src="https://res.cloudinary.com/dzrwauiut/image/upload/v1599592829/merchseum_nysmw9.png" width="70"/>
           <div className="Header__body">
             
             <div className="Header__summary snipcart-summary snipcart-checkout">
