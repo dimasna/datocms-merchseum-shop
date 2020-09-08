@@ -27,6 +27,7 @@ const Layout = ({ children, site }) => (
           
         </div>
       </div>
+      <br/>
       <div className="Wrap" >
         {children}
       </div>

@@ -1,7 +1,14 @@
 .Header {
   display: flex;
-  flex-direction: column;
-  background-color: gainsboro;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1em;
+  width: inherit;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 }
 
 .Header__body {
