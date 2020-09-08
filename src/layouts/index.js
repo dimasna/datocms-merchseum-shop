@@ -10,13 +10,9 @@ const Layout = ({ children, site }) => (
     <Helmet title="Merchseum Shop" />
     <div className="Container">
       <div className="Header">
-        <img src="https://res.cloudinary.com/dzrwauiut/image/upload/v1599592829/merchseum_nysmw9.png" width="50"/>
+        <img src="https://res.cloudinary.com/dzrwauiut/image/upload/v1599592829/merchseum_nysmw9.png" width="100"/>
           <div className="Header__body">
-            <h1 className="Header__title">
-              <Link data-text={site.siteMetadata.siteName} to="/">
-                {site.siteMetadata.siteName}
-              </Link>
-            </h1>
+            
             <div className="Header__summary snipcart-summary snipcart-checkout">
               <div className="Header__summary__title">
                 🛍 MY CART 🛍

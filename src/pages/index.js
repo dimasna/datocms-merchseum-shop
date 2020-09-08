@@ -93,7 +93,7 @@ const CustomQueryStringComponent = ({ search }) => {
                 <div className="Product__name">
                   {item.node.name}
                   <div className="Product__price">
-                    {item.node.price}€
+                    {item.node.price}$
                   </div>
                 </div>
                 <span className="Product__buy">Buy now</span>
