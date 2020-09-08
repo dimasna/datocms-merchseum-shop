@@ -34,11 +34,12 @@ const CustomQueryStringComponent = ({ search }) => {
         }
       `}
   render={data => {
-    //console.log(data);
+    console.log("usercatalogid :" +userCatalogId);
     const item = userCatalogId !== null ? data.products.edges.find(
     edge => edge.node.id === userCatalogId
   ) : null;
   
+  console.log("item : "+item)
   if (!item) {
     return <Layout site={data.site}>
       <div className="Catalogue">
