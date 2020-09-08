@@ -6,7 +6,7 @@ import Img from 'gatsby-image'
 import withLocation from "../layouts/withLocation"
 
 const CustomQueryStringComponent = ({ search }) => {
-  const { usercatalogid } = search
+  const { pid } = search
   //const usercatalogid = 1;
   return (
     <StaticQuery
@@ -36,9 +36,9 @@ const CustomQueryStringComponent = ({ search }) => {
         }
       `}
   render={data => {
-    console.log("usercatalogid :" +usercatalogid);
-    const item = usercatalogid !== undefined ? data.products.edges.find(
-    edge => edge.node.id === `DatoCmsProduct-${usercatalogid}-en`
+    console.log("usercatalogid :" +pid);
+    const item = pid !== undefined ? data.products.edges.find(
+    edge => edge.node.id === `DatoCmsProduct-${pid}-en`
   ) : undefined;
   
   console.log("item : "+JSON.stringify(item))
