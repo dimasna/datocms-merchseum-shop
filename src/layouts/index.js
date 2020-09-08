@@ -27,7 +27,7 @@ const Layout = ({ children, site }) => (
           
         </div>
       </div>
-      <br/>
+      <div style={{paddingTop: '4em'}}></>
       <div className="Wrap" >
         {children}
       </div>
